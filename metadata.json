@@ -1,0 +1,6 @@
+{
+  "name": "Reconhecimento Facial Teachable Machine",
+  "description": "Aplicação de reconhecimento facial em tempo real para controle de presença de alunos usando Teachable Machine e TensorFlow.js.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

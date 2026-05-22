@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-elegant-bg: #050505;
+  --color-elegant-card: #0a0a0a;
+  --color-elegant-border: #1f2937;
+  --color-elegant-blue: #3b82f6;
+  --color-elegant-green: #10b981;
+}
+
+@layer utilities {
+  /* Animação do Scanner de Face */
+  @keyframes scan {
+    0% {
+      top: 0%;
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+    }
+    100% {
+      top: 100%;
+      opacity: 0.1;
+    }
+  }
+
+  .animate-scan-line {
+    animation: scan 3s linear infinite;
+  }
+}
+
+/* Elegant Dark design overrides */
+body {
+  background-color: #050505;
+  color: #e5e7eb;
+}
+
+.glass-effect {
+  background-color: #0a0a0a;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px -3px rgba(59, 130, 246, 0.25);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px -4px rgba(16, 185, 129, 0.35);
+}
+
